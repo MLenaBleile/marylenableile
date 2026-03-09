@@ -19,40 +19,7 @@ title: MaryLena Bleile, Ph.D
   <div class="content-inner">
 
     <p class="body-text">
-      I am a Canadian statistician based in New York City. My work focuses on Bayesian models, mixed models, and Causal Reinforcement Learning. I am currently on sabbatical writing a technical book contracted with CRC Press.
-    </p>
-
-    <p class="body-text">
-      Previously, I was a biomarker study statistician at Sanofi, in the epidemiology and biostatistics department at Memorial Sloan-Kettering Cancer Center, and in the AI and Automation lab at UT Southwestern Medical Center.
-    </p>
-
-    <div class="research-highlight">
-      <h3>Relative Ignorability</h3>
-      <p class="paper-meta">
-        MaryLena Bleile, Minh-Nhat Phung, &amp; Minh-Binh Tran &middot; Mathematical Control and Related Fields, 2026
-      </p>
-      <p>
-        A new framework for decision-relevant observability in control theory and reinforcement learning. Missing data are "relatively ignorable" if they don't affect decision-making&mdash;even when classically non-ignorable. This less restrictive assumption enables valid treatment effect estimation and policy optimization in settings where standard methods would fail.
-      </p>
-      <a href="https://doi.org/10.3934/mcrf.2026006" target="_blank" rel="noopener" class="paper-link">Read the paper &rarr;</a>
-    </div>
-
-    <h2 class="section-heading">Book</h2>
-    <p class="body-text">
-      My forthcoming book, <strong>Optimal Control Using Causal Agents</strong>, explores the connections between Causal Inference and Reinforcement Learning. Contracted with CRC Press, with an estimated publication date of May 2027 and conference presentations planned for 2026.
-    </p>
-    <p class="body-text">
-      <a href="https://www.causal-rl-bridges.com" target="_blank" rel="noopener">Visit the book website &rarr;</a>
-    </p>
-
-    <h2 class="section-heading">Personal</h2>
-    <p class="body-text">
-      Outside of statistics, I practice Brazilian Jiu Jitsu, Judo, and weightlifting.
-    </p>
-
-    <h2 class="section-heading">Contact</h2>
-    <p class="body-text">
-      Connect with me on LinkedIn, or inquire about contract roles through TechData Service LLC.
+      Welcome to my website! I am a statistician and applied AI researcher with experience in applied Bayesian modelling and agentic methods (Reinforcement Learning). I am the author of "Optimal Control Using Causal Agents", forthcoming under contract with CRC Press&mdash;see the "Book" tab for more information. Previously I served as a biomarker study statistician at Sanofi, where I led a multidisciplinary methodological initiative for improving the efficiency of 'omics analysis. I have also had the pleasure of working in the Epi/Bio department at Memorial Sloan-Kettering Cancer Center as well as the AI and Automation lab at UT Southwestern Medical Center, where I performed my Ph.D research. When I'm not writing or coding, you can usually find me on the mat doing Brazilian Jiu Jitsu, or lifting weights at the gym.
     </p>
     <div class="contact-row">
       <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
