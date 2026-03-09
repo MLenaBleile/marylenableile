@@ -27,11 +27,13 @@ url: /projects/
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
           <h3><a href="https://github.com/MLenaBleile/sandy" target="_blank" rel="noopener">Sandy</a></h3>
-          <p>An autonomous AI agent that explores the internet to discover "sandwiches"&mdash;structured knowledge artifacts where two related concepts meaningfully bound a third.</p>
+          <p>An autonomous AI agent that forages across Wikipedia, academic papers, and news to discover "sandwiches"&mdash;structured knowledge artifacts where two related concepts (the bread) meaningfully bound a third (the filling). Each sandwich is validated across five weighted dimensions including novelty, specificity, and non-triviality. The growing corpus reveals universal structural patterns across mathematics, rhetoric, science, and negotiation.</p>
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">AI</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">Knowledge Discovery</span>
           </div>
+          <p style="margin-top: 12px;"><a href="https://sandy-agent.streamlit.app" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.9); text-decoration: underline;">Browse the live sandwich dashboard &rarr;</a></p>
         </div>
       </div>
 
