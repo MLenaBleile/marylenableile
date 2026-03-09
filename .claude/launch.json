@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "jekyll",
-      "runtimeExecutable": "bundle",
-      "runtimeArgs": ["exec", "jekyll", "serve", "--livereload"],
+      "name": "preview",
+      "runtimeExecutable": "C:\\Users\\merli\\AppData\\Local\\Python\\bin\\python.exe",
+      "runtimeArgs": ["preview.py"],
       "port": 4000
     }
   ]
