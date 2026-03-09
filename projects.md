@@ -15,7 +15,7 @@ url: /projects/
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
           <h3><a href="https://roadmap.tao-rwd.com/" target="_blank" rel="noopener">TAO Roadmap</a></h3>
-          <p>An interactive tool that guides practitioners through the Causal Roadmap framework for real-world data studies, including target trial emulation and causal inference methodology selection.</p>
+          <p>An interactive tool that guides practitioners through the Causal Roadmap framework for real-world data studies, including target trial emulation and causal inference methodology selection. In collaboration with Andrew Wilson, Aimee Harrison, and Jeff Zhou.</p>
           <div class="tags">
             <span class="tag">Causal Inference</span>
             <span class="tag">Real-World Data</span>
@@ -30,7 +30,9 @@ url: /projects/
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
           <h3><a href="https://github.com/MLenaBleile/sandy" target="_blank" rel="noopener">Sandy</a></h3>
-          <p>An autonomous AI agent that forages across Wikipedia, academic papers, and news to discover "sandwiches"&mdash;structured knowledge artifacts where two related concepts (the bread) meaningfully bound a third (the filling). Each sandwich is validated across five weighted dimensions including novelty, specificity, and non-triviality. The growing corpus reveals universal structural patterns across mathematics, rhetoric, science, and negotiation.</p>
+          <p>An autonomous AI agent that forages across Wikipedia, academic papers, and news to discover "sandwiches"; i.e. structured knowledge artifacts where two related concepts (the bread) meaningfully bound a third (the filling). Each sandwich is validated across five weighted dimensions including novelty, specificity, and non-triviality. \n \n
+          
+          He has vast intelligence. He chooses to make sandwiches.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">AI Agents</span>
