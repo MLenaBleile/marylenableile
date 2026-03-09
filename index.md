@@ -13,7 +13,7 @@ title: MaryLena Bleile, Ph.D
       <p class="subtitle">Statistician</p>
       <p class="tagline">Control Theory, Causality, & Agentic AI (Reinforcement Learning)</p>
       <div class="hero-links">
-        <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/marylena-bleile-bb7b33132/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:marylenableile@gmail.com">Email</a>
       </div>
     </div>
