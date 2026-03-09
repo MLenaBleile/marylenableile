@@ -1,0 +1,22 @@
+title: MaryLena Bleile, Ph.D
+description: Statistician — Bayesian models, causal reinforcement learning, optimal control
+url: "https://marylenableile.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+navigation:
+  - title: About
+    url: /
+  - title: Book
+    url: https://www.causal-rl-bridges.com
+    external: true
+  - title: Projects
+    url: /projects/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

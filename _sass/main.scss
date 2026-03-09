@@ -1,0 +1,363 @@
+// Colors (matching causal-rl-bridges.com)
+$purple: #5e3a8e;
+$deep-purple: #4a2c6e;
+$light-purple: #e8dff5;
+$orange: #ff6b35;
+$light-orange: #ff8c5a;
+$white: #ffffff;
+$off-white: #faf9fc;
+$text: #2d2d2d;
+$text-light: #6b6b6b;
+$border: #e0dce6;
+
+// Typography
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-heading: 'Lora', Georgia, serif;
+
+// Reset & base
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  color: $text;
+  background: $white;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Navigation
+.site-nav {
+  background: $white;
+  border-bottom: 2px solid $light-purple;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-symbol {
+  display: flex;
+  align-items: center;
+}
+
+.symbol-img {
+  height: 44px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: $text;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover,
+    &.active {
+      color: $purple;
+      border-bottom-color: $orange;
+    }
+  }
+}
+
+.external-icon {
+  font-size: 0.75em;
+  margin-left: 0.15em;
+}
+
+// Main content
+.site-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+// Homepage hero
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.hero-text {
+  h1 {
+    font-family: $font-heading;
+    font-size: 2.25rem;
+    color: $deep-purple;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: $orange;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: $text;
+  }
+}
+
+.hero-photo {
+  img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba($deep-purple, 0.15);
+  }
+}
+
+// Section styling
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: $font-heading;
+  font-size: 1.5rem;
+  color: $deep-purple;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $light-purple;
+}
+
+// Research highlight (on About page)
+.research-highlight {
+  background: $off-white;
+  border-left: 4px solid $orange;
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  h3 {
+    font-family: $font-heading;
+    color: $deep-purple;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .paper-meta {
+    font-size: 0.9rem;
+    color: $text-light;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .paper-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: $orange;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+// Contact links row
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid $purple;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: $purple;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $purple;
+      color: $white;
+    }
+  }
+}
+
+// Project cards
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: $white;
+  border: 1.5px solid $border;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: $purple;
+    box-shadow: 0 4px 16px rgba($deep-purple, 0.1);
+  }
+
+  &.featured {
+    border-color: $orange;
+    border-width: 2px;
+    background: $off-white;
+  }
+
+  h3 {
+    font-family: $font-heading;
+    font-size: 1.15rem;
+    color: $deep-purple;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $text-light;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    background: $light-purple;
+    color: $purple;
+  }
+
+  .tag-publication {
+    background: rgba($orange, 0.12);
+    color: darken($orange, 10%);
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 2px solid $light-purple;
+  margin-top: 4rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+
+  a {
+    font-size: 0.9rem;
+    color: $text-light;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: $text-light;
+}
+
+// Responsive
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-photo {
+    order: -1;
+    max-width: 200px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-direction: column;
+
+    a {
+      justify-content: center;
+    }
+  }
+}

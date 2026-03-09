@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="{{ '/' | relative_url }}" class="nav-symbol">
+        <img src="{{ '/media/symbol.png' | relative_url }}" alt="MaryLena Bleile" class="symbol-img">
+      </a>
+      <ul class="nav-links">
+        {% for link in site.navigation %}
+          <li>
+            <a href="{{ link.url | relative_url }}"
+               {% if link.external %}target="_blank" rel="noopener"{% endif %}
+               {% if page.url == link.url %}class="active"{% endif %}>
+              {{ link.title }}
+              {% if link.external %}<span class="external-icon">&nearr;</span>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  <main class="site-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/MLenaBleile" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-copyright">&copy; {{ 'now' | date: "%Y" }} MaryLena Bleile</p>
+    </div>
+  </footer>
+</body>
+</html>
