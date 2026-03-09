@@ -22,7 +22,7 @@ url: /publications/
     </div>
 
     <p class="body-text" style="margin-top: 30px;">
-      For a full list of publications, visit my <a href="https://scholar.google.com/citations?hl=en&user=NTmz-a0AAAAJ" target="_blank" rel="noopener">Google Scholar profile</a>.
+      For a full list of publications, visit my <a href="https://scholar.google.com/citations?user=eCPQzR8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
     </p>
 
   </div>
