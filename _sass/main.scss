@@ -238,6 +238,42 @@ img {
 }
 
 // ============================================
+// Recognition section
+// ============================================
+.recognition {
+  margin: 32px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-family: $font-body;
+    font-size: 17px;
+    color: $text-primary;
+    line-height: 1.6;
+    padding: 8px 0;
+    border-bottom: 1px solid $separator;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &::before {
+      content: "\2022";
+      color: $purple;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+
+  strong {
+    color: $maroon;
+  }
+}
+
+// ============================================
 // Research highlight
 // ============================================
 .research-highlight {

@@ -27,6 +27,17 @@ title: MaryLena Bleile, Ph.D
       Welcome to my website! I am a statistician and applied AI researcher with experience in applied Bayesian modelling and agentic methods (Reinforcement Learning). I am the author of "Optimal Control Using Causal Agents", forthcoming under contract with CRC Press; see the "Book" tab for more information. Previously I served as a biomarker study statistician at Sanofi, where I led a multidisciplinary methodological initiative for improving the efficiency of 'omics analysis. I have also had the pleasure of working in the Epi/Bio department at Memorial Sloan-Kettering Cancer Center as well as the AI and Automation lab at UT Southwestern Medical Center, where I performed my Ph.D research. When I'm not writing or coding, you can usually find me on the mat doing Brazilian Jiu Jitsu, or lifting weights at the gym.
     </p>
 
+    <div class="recognition">
+      <h2 class="section-heading">Recognition</h2>
+      <ul>
+        <li>Nominee, <strong>Person of the Year</strong> and <strong>Best New Book</strong> &mdash; Best of Causality 2025 community survey</li>
+        <li><strong>Rising Star in AI</strong>: Young Role Model of the Year Finalist, North America Division &mdash; Women in AI (2025)</li>
+        <li><strong>Biopharmaceutical Section Award</strong> &mdash; American Statistical Association</li>
+        <li>Organizer, <strong>Workshop on Causal Reinforcement Learning</strong> (2025) &mdash; sponsored by CRC Press, Springer, and Morph</li>
+        <li>15+ publications in <em>Nature Communications</em>, <em>JNCI</em>, <em>Mathematical Control and Related Fields</em>, and others</li>
+      </ul>
+    </div>
+
     <div class="art-gallery">
       <img src="{{ '/media/art1.png' | relative_url }}" alt="Mathematical visualization">
       <img src="{{ '/media/art2.png' | relative_url }}" alt="Mathematical visualization">
