@@ -181,6 +181,30 @@ img {
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.5;
   }
+
+  .hero-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+
+    a {
+      font-family: $font-nav;
+      font-size: 13px;
+      font-weight: 500;
+      color: $bg-white;
+      padding: 6px 18px;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+      transition: background 0.2s, border-color 0.2s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        color: $bg-white;
+      }
+    }
+  }
 }
 
 // ============================================

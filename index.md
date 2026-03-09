@@ -12,6 +12,10 @@ title: MaryLena Bleile, Ph.D
       <h1>MaryLena Bleile, Ph.D</h1>
       <p class="subtitle">Statistician</p>
       <p class="tagline">Control Theory, Causality, & Agentic AI (Reinforcement Learning)</p>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:marylenableile@gmail.com">Email</a>
+      </div>
     </div>
   </div>
 </section>
@@ -29,12 +33,6 @@ title: MaryLena Bleile, Ph.D
       <img src="{{ '/media/art3.png' | relative_url }}" alt="Mathematical visualization">
     </div>
 
-    <div class="contact-row">
-      <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://scholar.google.com/citations?hl=en&user=NTmz-a0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://github.com/MLenaBleile" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:marylenableile@gmail.com">Email</a>
-    </div>
 
   </div>
 </section>
