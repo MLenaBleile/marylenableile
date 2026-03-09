@@ -15,7 +15,8 @@ navigation:
   - title: Projects
     url: /projects/
   - title: Publications
-    url: /publications/
+    url: https://scholar.google.com/citations?hl=en&user=NTmz-a0AAAAJ
+    external: true
 
 exclude:
   - Gemfile
