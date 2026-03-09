@@ -17,6 +17,7 @@ url: /publications/
       <p>
         A new framework for decision-relevant observability in control theory and reinforcement learning. Missing data are "relatively ignorable" if they don't affect decision-making&mdash;even when classically non-ignorable.
       </p>
+      <img src="{{ '/media/ri_fishing.png' | relative_url }}" alt="Relative Ignorability — fishing analogy diagram" style="margin: 20px 0; max-width: 100%; border-radius: 4px;">
       <a href="https://doi.org/10.3934/mcrf.2026006" target="_blank" rel="noopener" class="paper-link">Read the paper &rarr;</a>
     </div>
 

@@ -5,10 +5,10 @@
 $maroon: #661E1E;
 $maroon-dark: #4a1515;
 $maroon-light: #8a3030;
-$purple: #5e3a8e;
-$purple-deep: #4a2c6e;
-$purple-light: #e8dff5;
-$purple-faint: #f4f0fa;
+$purple: #7B2D8E;
+$purple-deep: #5C1A6E;
+$purple-light: #eddff5;
+$purple-faint: #f6f0fa;
 
 $bg-main: #faf9fc;
 $bg-white: #FFFFFF;
@@ -389,13 +389,30 @@ img {
 
 .project-card {
   background: $bg-white;
-  padding: 28px;
   border: 1px solid $separator;
   transition: border-color 0.2s, box-shadow 0.2s;
+  overflow: hidden;
 
   &:hover {
     border-color: $purple;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background: $purple-faint;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: 24px;
   }
 
   h3 {
@@ -440,6 +457,27 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 2px;
+  }
+}
+
+// Art gallery row (About page)
+.art-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 36px 0;
+
+  img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $separator;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: $purple;
+    }
   }
 }
 
