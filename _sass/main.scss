@@ -274,6 +274,129 @@ img {
 }
 
 // ============================================
+// Hire Me modal
+// ============================================
+.hire-me-btn {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+
+.hire-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 24px;
+  overflow-y: auto;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.hire-modal {
+  background: $bg-white;
+  max-width: 680px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 48px 44px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  margin: auto;
+
+  h2 {
+    font-family: $font-heading;
+    font-size: 32px;
+    font-weight: 700;
+    color: $maroon;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-family: $font-heading;
+    font-size: 20px;
+    font-weight: 700;
+    color: $purple-deep;
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: 17px;
+    color: $text-primary;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .hire-intro {
+    font-size: 18px;
+    color: $text-secondary;
+    border-left: 3px solid $purple;
+    padding-left: 16px;
+    margin-bottom: 24px;
+  }
+
+  strong {
+    color: $maroon;
+  }
+
+  em {
+    color: $text-primary;
+  }
+}
+
+.hire-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: $text-muted;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+
+  &:hover {
+    color: $maroon;
+  }
+}
+
+.hire-cta {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid $separator;
+
+  a {
+    font-family: $font-nav;
+    font-size: 15px;
+    font-weight: 700;
+    color: $bg-white;
+    background: linear-gradient(135deg, $maroon 0%, $purple-deep 100%);
+    padding: 12px 28px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+      color: $bg-white;
+    }
+  }
+}
+
+// ============================================
 // Research highlight
 // ============================================
 .research-highlight {
@@ -720,6 +843,22 @@ img {
 
   .hero-text .tagline {
     font-size: 16px;
+  }
+
+  .hero-text .hero-links {
+    justify-content: center;
+  }
+
+  .hire-modal-overlay {
+    padding: 20px 16px;
+  }
+
+  .hire-modal {
+    padding: 32px 24px;
+
+    h2 {
+      font-size: 26px;
+    }
   }
 
   .project-card-featured {
