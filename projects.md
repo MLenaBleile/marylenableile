@@ -24,6 +24,9 @@ url: /projects/
       </div>
 
       <div class="project-card-featured">
+        <div class="featured-image">
+          <img src="{{ '/media/sandy.png' | relative_url }}" alt="Sandy — AI knowledge discovery agent">
+        </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
           <h3><a href="https://github.com/MLenaBleile/sandy" target="_blank" rel="noopener">Sandy</a></h3>
@@ -57,7 +60,7 @@ url: /projects/
 
       <div class="project-card">
         <div class="card-image">
-          <img src="{{ '/media/art3.png' | relative_url }}" alt="JudoBot visualization">
+          <img src="{{ '/media/judobot.png' | relative_url }}" alt="JudoBot visualization">
         </div>
         <div class="card-body">
           <h3><a href="https://github.com/MLenaBleile/JudoBot" target="_blank" rel="noopener">JudoBot</a></h3>

@@ -322,6 +322,19 @@ img {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   }
 
+  .featured-image {
+    flex-shrink: 0;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+  }
+
   .featured-content {
     flex: 1;
   }
@@ -596,6 +609,12 @@ img {
 
   .project-card-featured {
     padding: 24px;
+    flex-direction: column;
+
+    .featured-image img {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   .projects-grid {

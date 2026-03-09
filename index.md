@@ -11,7 +11,7 @@ title: MaryLena Bleile, Ph.D
     <div class="hero-text">
       <h1>MaryLena Bleile, Ph.D</h1>
       <p class="subtitle">Statistician</p>
-      <p class="tagline">Bridge fields without apology.</p>
+      <p class="tagline">Control Theory, Causality, & Agentic AI (Reinforcement Learning)</p>
     </div>
   </div>
 </section>
