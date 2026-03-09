@@ -1,22 +1,30 @@
 // ============================================
-// Variables — matched to marylenableile.com
+// Personal brand: Maroon + Purple
+// Book brand (separate): Purple + Orange
 // ============================================
-$bg-gray: #D1D0D0;
+$maroon: #661E1E;
+$maroon-dark: #4a1515;
+$maroon-light: #8a3030;
+$purple: #5e3a8e;
+$purple-deep: #4a2c6e;
+$purple-light: #e8dff5;
+$purple-faint: #f4f0fa;
+
+$bg-main: #faf9fc;
 $bg-white: #FFFFFF;
 $text-primary: #221F1F;
-$text-secondary: #333333;
-$accent-maroon: #661E1E;
-$nav-active: #000000;
+$text-secondary: #555555;
+$text-muted: #888888;
+$nav-active: #221F1F;
 $nav-inactive: #909090;
-$link-blue: #0099E0;
-$button-teal: #45BCCD;
-$separator: #000000;
+$link-color: $purple;
+$separator: #e0dce6;
 
 $font-body: "Times New Roman", Times, serif;
 $font-heading: "PT Serif", Arial, serif;
 $font-nav: "Roboto", Arial, sans-serif;
 
-$content-max: 1200px;
+$content-max: 1080px;
 
 // ============================================
 // Reset
@@ -35,15 +43,16 @@ html {
 body {
   font-family: $font-body;
   color: $text-primary;
-  background: $bg-gray;
-  line-height: 1.55;
+  background: $bg-main;
+  line-height: 1.6;
 }
 
 a {
-  color: $link-blue;
+  color: $link-color;
   text-decoration: none;
+
   &:hover {
-    text-decoration: underline;
+    color: $maroon;
   }
 }
 
@@ -58,63 +67,69 @@ img {
 // ============================================
 .site-header {
   background: $bg-white;
-  height: 120px;
-  display: flex;
-  align-items: center;
+  border-bottom: 3px solid $purple-light;
+  padding: 0;
 }
 
 .header-inner {
   max-width: $content-max;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
 
 .nav-link {
   font-family: $font-nav;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: $nav-inactive;
-  transition: color 0.2s;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: $nav-active;
+    color: $maroon;
+    border-bottom-color: $maroon;
     text-decoration: none;
   }
 
   &.active {
     color: $nav-active;
+    border-bottom-color: $purple;
   }
 }
 
 .header-symbol {
   display: block;
   line-height: 0;
-  margin-left: 60px;
+  margin-left: 20px;
 
   img {
-    height: 65px;
+    height: 55px;
     width: auto;
   }
 }
 
 // ============================================
-// Hero section (About page)
+// Hero section
 // ============================================
 .hero-section {
-  background: $bg-gray;
-  padding: 40px 20px 50px;
+  background: linear-gradient(135deg, $maroon-dark 0%, $purple-deep 100%);
+  padding: 60px 24px;
+  color: $bg-white;
 }
 
 .hero-inner {
@@ -122,36 +137,49 @@ img {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 48px;
 }
 
 .hero-photo {
   flex-shrink: 0;
 
   img {
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 }
 
 .hero-text {
   h1 {
-    font-family: $font-body;
-    font-size: 40px;
+    font-family: $font-heading;
+    font-size: 36px;
     font-weight: 700;
-    color: $text-primary;
-    line-height: 1.05;
-    margin-bottom: 6px;
+    color: $bg-white;
+    line-height: 1.15;
+    margin-bottom: 8px;
   }
 
   .subtitle {
+    font-family: $font-nav;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+  }
+
+  .tagline {
     font-family: $font-heading;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    color: $accent-maroon;
-    line-height: 1.6;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
   }
 }
 
@@ -159,8 +187,7 @@ img {
 // Content sections
 // ============================================
 .content-section {
-  background: $bg-gray;
-  padding: 0 20px 40px;
+  padding: 48px 24px;
 }
 
 .content-inner {
@@ -172,48 +199,18 @@ img {
   font-family: $font-heading;
   font-size: 24px;
   font-weight: 400;
-  color: $accent-maroon;
+  color: $maroon;
   margin-bottom: 16px;
   line-height: 1.6;
 }
 
 .body-text {
   font-family: $font-body;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   color: $text-primary;
-  line-height: 1.55;
-  margin-bottom: 16px;
-}
-
-.caption {
-  font-family: $font-body;
-  font-size: 14px;
-  color: $text-primary;
-  line-height: 1.45;
-  margin-top: 4px;
-}
-
-// Two-column layout
-.two-col {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-top: 30px;
-}
-
-.col {
-  flex: 1;
-  min-width: 0;
-}
-
-.col-photo {
-  img {
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    aspect-ratio: 1;
-  }
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
 
 // ============================================
@@ -221,21 +218,22 @@ img {
 // ============================================
 .research-highlight {
   background: $bg-white;
-  padding: 30px;
+  padding: 28px 30px;
   margin: 30px 0;
-  border-left: 4px solid $accent-maroon;
+  border-left: 4px solid $maroon;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 
   h3 {
     font-family: $font-heading;
-    font-size: 22px;
-    font-weight: 400;
-    color: $accent-maroon;
-    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $maroon;
+    margin-bottom: 8px;
   }
 
   .paper-meta {
     font-family: $font-body;
-    font-size: 16px;
+    font-size: 15px;
     font-style: italic;
     color: $text-secondary;
     margin-bottom: 12px;
@@ -243,18 +241,25 @@ img {
 
   p {
     font-family: $font-body;
-    font-size: 18px;
+    font-size: 17px;
     color: $text-primary;
-    line-height: 1.55;
+    line-height: 1.65;
     margin-bottom: 8px;
   }
 
   .paper-link {
-    font-family: $font-body;
-    font-size: 18px;
-    color: $link-blue;
+    font-family: $font-nav;
+    font-size: 14px;
+    font-weight: 700;
+    color: $purple;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 8px;
+
+    &:hover {
+      color: $maroon;
+    }
   }
 }
 
@@ -263,14 +268,25 @@ img {
 // ============================================
 .contact-row {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 16px;
 
   a {
-    font-family: $font-body;
-    font-size: 19px;
-    color: $link-blue;
+    font-family: $font-nav;
+    font-size: 14px;
+    font-weight: 500;
+    color: $purple;
+    padding: 8px 20px;
+    border: 1.5px solid $purple;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: $purple;
+      color: $bg-white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -278,44 +294,50 @@ img {
 // Projects page
 // ============================================
 .page-title {
-  font-family: $font-body;
-  font-size: 40px;
+  font-family: $font-heading;
+  font-size: 36px;
   font-weight: 700;
   color: $text-primary;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 24px;
-  margin-top: 10px;
+// Featured projects — full width
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 36px;
 }
 
-.project-card {
-  background: $bg-white;
-  padding: 28px;
+.project-card-featured {
+  background: linear-gradient(135deg, $maroon-dark 0%, $purple-deep 100%);
+  padding: 32px 36px;
+  color: $bg-white;
+  display: flex;
+  align-items: center;
+  gap: 32px;
   transition: box-shadow 0.2s;
 
   &:hover {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   }
 
-  &.featured {
-    border-left: 4px solid $accent-maroon;
+  .featured-content {
+    flex: 1;
   }
 
   h3 {
     font-family: $font-heading;
-    font-size: 20px;
-    font-weight: 400;
-    color: $accent-maroon;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $bg-white;
+    margin-bottom: 8px;
 
     a {
       color: inherit;
+
       &:hover {
-        color: $link-blue;
+        color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
       }
     }
@@ -324,8 +346,80 @@ img {
   p {
     font-family: $font-body;
     font-size: 17px;
-    color: $text-primary;
-    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: $font-nav;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+  }
+
+  .featured-badge {
+    font-family: $font-nav;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+  }
+}
+
+// Regular project cards grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: $bg-white;
+  padding: 28px;
+  border: 1px solid $separator;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: $purple;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  h3 {
+    font-family: $font-heading;
+    font-size: 19px;
+    font-weight: 700;
+    color: $maroon;
+    margin-bottom: 8px;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $purple;
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    font-family: $font-body;
+    font-size: 16px;
+    color: $text-secondary;
+    line-height: 1.6;
     margin-bottom: 10px;
   }
 
@@ -338,18 +432,14 @@ img {
 
   .tag {
     font-family: $font-nav;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     padding: 3px 10px;
-    background: $bg-gray;
-    color: $text-secondary;
+    background: $purple-faint;
+    color: $purple;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-  }
-
-  .tag-publication {
-    background: $accent-maroon;
-    color: $bg-white;
+    border-radius: 2px;
   }
 }
 
@@ -357,31 +447,56 @@ img {
 // Footer
 // ============================================
 .site-footer {
-  border-top: 1px solid $separator;
+  border-top: 3px solid $purple-light;
   background: $bg-white;
-  padding: 24px 20px;
+  padding: 36px 24px;
 }
 
 .footer-inner {
   max-width: $content-max;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  img {
+    height: 36px;
+    width: auto;
+    opacity: 0.6;
+  }
+
+  .footer-tagline {
+    font-family: $font-heading;
+    font-size: 14px;
+    font-style: italic;
+    color: $text-muted;
+  }
+}
+
+.footer-right {
+  text-align: right;
 }
 
 .footer-links {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
+  gap: 24px;
+  margin-bottom: 8px;
 
   a {
     font-family: $font-nav;
-    font-size: 15px;
-    font-weight: 400;
-    color: $nav-inactive;
+    font-size: 13px;
+    font-weight: 500;
+    color: $text-muted;
+    letter-spacing: 0.3px;
 
     &:hover {
-      color: $nav-active;
+      color: $purple;
       text-decoration: none;
     }
   }
@@ -389,34 +504,37 @@ img {
 
 .footer-copy {
   font-family: $font-body;
-  font-size: 14px;
-  color: $nav-inactive;
+  font-size: 13px;
+  color: $text-muted;
 }
 
 // ============================================
 // Responsive
 // ============================================
 @media (max-width: 768px) {
-  .site-header {
-    height: auto;
-    padding: 16px 0;
-  }
-
   .header-inner {
-    flex-direction: row;
-    gap: 16px;
+    padding: 16px 20px;
+    gap: 20px;
   }
 
   .site-nav {
-    gap: 24px;
+    gap: 20px;
   }
 
   .nav-link {
-    font-size: 18px;
+    font-size: 13px;
   }
 
-  .header-symbol img {
-    height: 50px;
+  .header-symbol {
+    margin-left: 8px;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .hero-section {
+    padding: 40px 20px;
   }
 
   .hero-inner {
@@ -426,25 +544,34 @@ img {
   }
 
   .hero-photo img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .hero-text h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
-  .hero-text .subtitle {
-    font-size: 20px;
+  .hero-text .tagline {
+    font-size: 16px;
   }
 
-  .two-col {
-    flex-direction: column;
-    gap: 24px;
+  .project-card-featured {
+    padding: 24px;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-right {
+    text-align: center;
   }
 
   .body-text {
@@ -454,19 +581,30 @@ img {
 
 @media (max-width: 480px) {
   .site-nav {
-    gap: 16px;
+    gap: 14px;
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 0;
   }
 
   .hero-text h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .contact-row {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+
+    a {
+      text-align: center;
+    }
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 }
