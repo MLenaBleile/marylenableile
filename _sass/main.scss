@@ -317,6 +317,8 @@ img {
   align-items: center;
   gap: 32px;
   transition: box-shadow 0.2s;
+  border-radius: 8px;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -328,10 +330,10 @@ img {
     img {
       width: 200px;
       height: 200px;
-      border-radius: 50%;
+      border-radius: 12px;
       object-fit: cover;
       border: 3px solid rgba(255, 255, 255, 0.25);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -390,6 +392,59 @@ img {
     letter-spacing: 1.5px;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 8px;
+  }
+}
+
+// TAO Roadmap — warm amber/orange like the tool
+.featured-tao {
+  background: linear-gradient(135deg, #b5651d 0%, #e8911a 50%, #d4881a 100%);
+
+  .featured-image img {
+    border-color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+  }
+
+  .tag {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .featured-badge {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Sandy — soft peach/pink like the dashboard
+.featured-sandy {
+  background: linear-gradient(135deg, #d4827a 0%, #e8a88c 40%, #f2c5a0 100%);
+
+  .featured-image img {
+    border-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+  }
+
+  p, h3, h3 a {
+    color: #3d2020;
+  }
+
+  p {
+    color: #5a3030;
+  }
+
+  .tag {
+    background: rgba(255, 255, 255, 0.35);
+    color: #5a2020;
+  }
+
+  .featured-badge {
+    color: rgba(90, 40, 40, 0.5);
+  }
+
+  a {
+    color: #5a2020;
+
+    &:hover {
+      color: #3d1010;
+    }
   }
 }
 

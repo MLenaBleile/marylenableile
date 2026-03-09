@@ -11,7 +11,10 @@ url: /projects/
 
     <div class="featured-projects">
 
-      <div class="project-card-featured">
+      <div class="project-card-featured featured-tao">
+        <div class="featured-image">
+          <img src="{{ '/media/taoroadmap.png' | relative_url }}" alt="TAO Roadmap — Causal Navigator">
+        </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
           <h3><a href="https://roadmap.tao-rwd.com/" target="_blank" rel="noopener">TAO Roadmap</a></h3>
@@ -23,7 +26,7 @@ url: /projects/
         </div>
       </div>
 
-      <div class="project-card-featured">
+      <div class="project-card-featured featured-sandy">
         <div class="featured-image">
           <img src="{{ '/media/sandy.png' | relative_url }}" alt="Sandy — AI knowledge discovery agent">
         </div>
@@ -38,7 +41,7 @@ url: /projects/
             <span class="tag">AI Agents</span>
             <span class="tag">Knowledge Discovery</span>
           </div>
-          <p style="margin-top: 12px;"><a href="https://sandy-agent.streamlit.app" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.9); text-decoration: underline;">Visit Sandy's Kitchen: Forage for sandwiches &rarr;</a></p>
+          <p style="margin-top: 12px;"><a href="https://sandy-agent.streamlit.app" target="_blank" rel="noopener">Visit Sandy's Kitchen: Forage for sandwiches &rarr;</a></p>
         </div>
       </div>
 
