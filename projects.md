@@ -13,7 +13,7 @@ url: /projects/
 
       <div class="project-card-featured featured-tao">
         <div class="featured-image">
-          <img src="{{ '/media/taoroadmap.png' | relative_url }}" alt="TAO Roadmap — Causal Navigator">
+          <img src="{{ '/media/taoroadmap.png' | relative_url }}" alt="TAO Roadmap, Causal Navigator">
         </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
@@ -28,7 +28,7 @@ url: /projects/
 
       <div class="project-card-featured featured-sandy">
         <div class="featured-image">
-          <img src="{{ '/media/sandy.png' | relative_url }}" alt="Sandy — AI knowledge discovery agent">
+          <img src="{{ '/media/sandy.png' | relative_url }}" alt="Sandy, AI knowledge discovery agent">
         </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
