@@ -70,7 +70,8 @@ img {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
 }
 
 .site-nav {
@@ -100,6 +101,7 @@ img {
 .header-symbol {
   display: block;
   line-height: 0;
+  margin-left: 60px;
 
   img {
     height: 65px;

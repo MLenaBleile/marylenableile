@@ -6,7 +6,7 @@ title: MaryLena Bleile, Ph.D
 <section class="hero-section">
   <div class="hero-inner">
     <div class="hero-photo">
-      <img src="{{ '/media/headshot.png' | relative_url }}" alt="MaryLena Bleile">
+      <img src="{{ '/media/photo.jpg' | relative_url }}" alt="MaryLena Bleile">
     </div>
     <div class="hero-text">
       <h1>MaryLena Bleile, Ph.D</h1>

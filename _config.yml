@@ -14,6 +14,8 @@ navigation:
     external: true
   - title: Projects
     url: /projects/
+  - title: Publications
+    url: /publications/
 
 exclude:
   - Gemfile

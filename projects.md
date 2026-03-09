@@ -11,17 +11,6 @@ url: /projects/
 
     <div class="projects-grid">
 
-      <div class="project-card featured">
-        <h3><a href="https://doi.org/10.3934/mcrf.2026006" target="_blank" rel="noopener">Relative Ignorability</a></h3>
-        <p>A framework for decision-relevant observability in control theory and RL. Missing data are "relatively ignorable" if they don't affect decision-making, even when classically non-ignorable.</p>
-        <p><em>With Minh-Nhat Phung &amp; Minh-Binh Tran. Published in Mathematical Control and Related Fields.</em></p>
-        <div class="tags">
-          <span class="tag tag-publication">Publication</span>
-          <span class="tag">Causal Inference</span>
-          <span class="tag">RL</span>
-        </div>
-      </div>
-
       <div class="project-card">
         <h3><a href="https://github.com/MLenaBleile/open-ramsay" target="_blank" rel="noopener">Open Ramsay</a></h3>
         <p>Open-source attempt to prove R(5,5) &ge; 44 in Ramsey theory. Uses algebraic graph constructions, local search optimization, SAT solvers, and formal verification in Lean 4.</p>
@@ -55,6 +44,15 @@ url: /projects/
         <div class="tags">
           <span class="tag">R</span>
           <span class="tag">Bayesian</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://roadmap.tao-rwd.com/" target="_blank" rel="noopener">TAO Roadmap</a></h3>
+        <p>An interactive tool that guides practitioners through the Causal Roadmap framework for real-world data studies, including target trial emulation and causal inference methodology selection.</p>
+        <div class="tags">
+          <span class="tag">Causal Inference</span>
+          <span class="tag">Real-World Data</span>
         </div>
       </div>
 
