@@ -1,20 +1,26 @@
-// Colors (matching causal-rl-bridges.com)
-$purple: #5e3a8e;
-$deep-purple: #4a2c6e;
-$light-purple: #e8dff5;
-$orange: #ff6b35;
-$light-orange: #ff8c5a;
-$white: #ffffff;
-$off-white: #faf9fc;
-$text: #2d2d2d;
-$text-light: #6b6b6b;
-$border: #e0dce6;
+// ============================================
+// Variables — matched to marylenableile.com
+// ============================================
+$bg-gray: #D1D0D0;
+$bg-white: #FFFFFF;
+$text-primary: #221F1F;
+$text-secondary: #333333;
+$accent-maroon: #661E1E;
+$nav-active: #000000;
+$nav-inactive: #909090;
+$link-blue: #0099E0;
+$button-teal: #45BCCD;
+$separator: #000000;
 
-// Typography
-$font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-$font-heading: 'Lora', Georgia, serif;
+$font-body: "Times New Roman", Times, serif;
+$font-heading: "PT Serif", Arial, serif;
+$font-nav: "Roboto", Arial, sans-serif;
 
-// Reset & base
+$content-max: 1200px;
+
+// ============================================
+// Reset
+// ============================================
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -23,341 +29,442 @@ $font-heading: 'Lora', Georgia, serif;
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   font-family: $font-body;
-  color: $text;
-  background: $white;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+  color: $text-primary;
+  background: $bg-gray;
+  line-height: 1.55;
 }
 
 a {
-  color: $purple;
+  color: $link-blue;
   text-decoration: none;
-  transition: color 0.2s;
-
   &:hover {
-    color: $orange;
+    text-decoration: underline;
   }
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-// Navigation
-.site-nav {
-  background: $white;
-  border-bottom: 2px solid $light-purple;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+// ============================================
+// Header / Navigation
+// ============================================
+.site-header {
+  background: $bg-white;
+  height: 120px;
+  display: flex;
+  align-items: center;
 }
 
-.nav-container {
-  max-width: 960px;
+.header-inner {
+  max-width: $content-max;
+  width: 100%;
   margin: 0 auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-symbol {
+.site-nav {
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 
-.symbol-img {
-  height: 44px;
-  width: auto;
-}
+.nav-link {
+  font-family: $font-nav;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $nav-inactive;
+  transition: color 0.2s;
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+  &:hover {
+    color: $nav-active;
+    text-decoration: none;
+  }
 
-  a {
-    font-weight: 500;
-    font-size: 0.95rem;
-    color: $text;
-    padding: 0.25rem 0;
-    border-bottom: 2px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-
-    &:hover,
-    &.active {
-      color: $purple;
-      border-bottom-color: $orange;
-    }
+  &.active {
+    color: $nav-active;
   }
 }
 
-.external-icon {
-  font-size: 0.75em;
-  margin-left: 0.15em;
+.header-symbol {
+  display: block;
+  line-height: 0;
+
+  img {
+    height: 65px;
+    width: auto;
+  }
 }
 
-// Main content
-.site-content {
-  max-width: 960px;
+// ============================================
+// Hero section (About page)
+// ============================================
+.hero-section {
+  background: $bg-gray;
+  padding: 40px 20px 50px;
+}
+
+.hero-inner {
+  max-width: $content-max;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-// Homepage hero
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 3rem;
-  align-items: start;
-  margin-bottom: 3rem;
+.hero-photo {
+  flex-shrink: 0;
+
+  img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 .hero-text {
   h1 {
-    font-family: $font-heading;
-    font-size: 2.25rem;
-    color: $deep-purple;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
+    font-family: $font-body;
+    font-size: 40px;
+    font-weight: 700;
+    color: $text-primary;
+    line-height: 1.05;
+    margin-bottom: 6px;
   }
 
   .subtitle {
-    font-size: 1.1rem;
-    color: $orange;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    color: $text;
+    font-family: $font-heading;
+    font-size: 24px;
+    font-weight: 400;
+    color: $accent-maroon;
+    line-height: 1.6;
   }
 }
 
-.hero-photo {
+// ============================================
+// Content sections
+// ============================================
+.content-section {
+  background: $bg-gray;
+  padding: 0 20px 40px;
+}
+
+.content-inner {
+  max-width: $content-max;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-family: $font-heading;
+  font-size: 24px;
+  font-weight: 400;
+  color: $accent-maroon;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.body-text {
+  font-family: $font-body;
+  font-size: 19px;
+  font-weight: 400;
+  color: $text-primary;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.caption {
+  font-family: $font-body;
+  font-size: 14px;
+  color: $text-primary;
+  line-height: 1.45;
+  margin-top: 4px;
+}
+
+// Two-column layout
+.two-col {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.col {
+  flex: 1;
+  min-width: 0;
+}
+
+.col-photo {
   img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba($deep-purple, 0.15);
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1;
   }
 }
 
-// Section styling
-.section {
-  margin-bottom: 3rem;
-}
-
-.section-title {
-  font-family: $font-heading;
-  font-size: 1.5rem;
-  color: $deep-purple;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid $light-purple;
-}
-
-// Research highlight (on About page)
+// ============================================
+// Research highlight
+// ============================================
 .research-highlight {
-  background: $off-white;
-  border-left: 4px solid $orange;
-  border-radius: 0 8px 8px 0;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  background: $bg-white;
+  padding: 30px;
+  margin: 30px 0;
+  border-left: 4px solid $accent-maroon;
 
   h3 {
     font-family: $font-heading;
-    color: $deep-purple;
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+    font-size: 22px;
+    font-weight: 400;
+    color: $accent-maroon;
+    margin-bottom: 10px;
   }
 
   .paper-meta {
-    font-size: 0.9rem;
-    color: $text-light;
-    margin-bottom: 0.75rem;
+    font-family: $font-body;
+    font-size: 16px;
     font-style: italic;
+    color: $text-secondary;
+    margin-bottom: 12px;
   }
 
   p {
-    margin-bottom: 0.5rem;
+    font-family: $font-body;
+    font-size: 18px;
+    color: $text-primary;
+    line-height: 1.55;
+    margin-bottom: 8px;
   }
 
   .paper-link {
+    font-family: $font-body;
+    font-size: 18px;
+    color: $link-blue;
     display: inline-block;
-    margin-top: 0.5rem;
-    font-weight: 500;
-    color: $orange;
-
-    &:hover {
-      color: $purple;
-    }
+    margin-top: 6px;
   }
 }
 
-// Contact links row
-.contact-links {
+// ============================================
+// Contact links
+// ============================================
+.contact-row {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 10px;
 
   a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.5rem 1rem;
-    border: 1.5px solid $purple;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: $purple;
-    transition: background 0.2s, color 0.2s;
-
-    &:hover {
-      background: $purple;
-      color: $white;
-    }
+    font-family: $font-body;
+    font-size: 19px;
+    color: $link-blue;
   }
 }
 
-// Project cards
+// ============================================
+// Projects page
+// ============================================
+.page-title {
+  font-family: $font-body;
+  font-size: 40px;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 30px;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  margin-top: 10px;
 }
 
 .project-card {
-  background: $white;
-  border: 1.5px solid $border;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  background: $bg-white;
+  padding: 28px;
+  transition: box-shadow 0.2s;
 
   &:hover {
-    border-color: $purple;
-    box-shadow: 0 4px 16px rgba($deep-purple, 0.1);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   }
 
   &.featured {
-    border-color: $orange;
-    border-width: 2px;
-    background: $off-white;
+    border-left: 4px solid $accent-maroon;
   }
 
   h3 {
     font-family: $font-heading;
-    font-size: 1.15rem;
-    color: $deep-purple;
-    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: $accent-maroon;
+    margin-bottom: 10px;
 
     a {
       color: inherit;
-
       &:hover {
-        color: $orange;
+        color: $link-blue;
+        text-decoration: none;
       }
     }
   }
 
   p {
-    font-size: 0.9rem;
-    color: $text-light;
-    margin-bottom: 0.75rem;
-    line-height: 1.6;
+    font-family: $font-body;
+    font-size: 17px;
+    color: $text-primary;
+    line-height: 1.55;
+    margin-bottom: 10px;
   }
 
   .tags {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
     flex-wrap: wrap;
+    margin-top: 12px;
   }
 
   .tag {
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    background: $light-purple;
-    color: $purple;
+    font-family: $font-nav;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    background: $bg-gray;
+    color: $text-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .tag-publication {
-    background: rgba($orange, 0.12);
-    color: darken($orange, 10%);
+    background: $accent-maroon;
+    color: $bg-white;
   }
 }
 
+// ============================================
 // Footer
+// ============================================
 .site-footer {
-  border-top: 2px solid $light-purple;
-  margin-top: 4rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
+  border-top: 1px solid $separator;
+  background: $bg-white;
+  padding: 24px 20px;
 }
 
-.footer-container {
-  max-width: 960px;
+.footer-inner {
+  max-width: $content-max;
   margin: 0 auto;
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 30px;
+  margin-bottom: 10px;
 
   a {
-    font-size: 0.9rem;
-    color: $text-light;
+    font-family: $font-nav;
+    font-size: 15px;
+    font-weight: 400;
+    color: $nav-inactive;
 
     &:hover {
-      color: $purple;
+      color: $nav-active;
+      text-decoration: none;
     }
   }
 }
 
-.footer-copyright {
-  font-size: 0.8rem;
-  color: $text-light;
+.footer-copy {
+  font-family: $font-body;
+  font-size: 14px;
+  color: $nav-inactive;
 }
 
+// ============================================
 // Responsive
-@media (max-width: 700px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+// ============================================
+@media (max-width: 768px) {
+  .site-header {
+    height: auto;
+    padding: 16px 0;
   }
 
-  .hero-photo {
-    order: -1;
-    max-width: 200px;
+  .header-inner {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .site-nav {
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .header-symbol img {
+    height: 50px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
   }
 
   .hero-text h1 {
-    font-size: 1.75rem;
+    font-size: 30px;
   }
 
-  .nav-links {
-    gap: 1.25rem;
+  .hero-text .subtitle {
+    font-size: 20px;
+  }
+
+  .two-col {
+    flex-direction: column;
+    gap: 24px;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-links {
-    flex-direction: column;
+  .body-text {
+    font-size: 17px;
+  }
+}
 
-    a {
-      justify-content: center;
-    }
+@media (max-width: 480px) {
+  .site-nav {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 8px;
   }
 }

@@ -8,42 +8,44 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="site-nav">
-    <div class="nav-container">
-      <a href="{{ '/' | relative_url }}" class="nav-symbol">
-        <img src="{{ '/media/symbol.png' | relative_url }}" alt="MaryLena Bleile" class="symbol-img">
-      </a>
-      <ul class="nav-links">
-        {% for link in site.navigation %}
-          <li>
-            <a href="{{ link.url | relative_url }}"
-               {% if link.external %}target="_blank" rel="noopener"{% endif %}
-               {% if page.url == link.url %}class="active"{% endif %}>
-              {{ link.title }}
-              {% if link.external %}<span class="external-icon">&nearr;</span>{% endif %}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
 
-  <main class="site-content">
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="site-nav">
+        {% for link in site.navigation %}
+          {% if link.external %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener"
+               class="nav-link">{{ link.title }}</a>
+          {% else %}
+            <a href="{{ link.url | prepend: site.baseurl }}"
+               class="nav-link {% if page.url == link.url %}active{% endif %}">{{ link.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <a href="{{ '/' | relative_url }}" class="header-symbol">
+        <img src="{{ '/media/symbol.png' | relative_url }}" alt="MaryLena Bleile">
+      </a>
+    </div>
+  </header>
+
+  <main>
     {{ content }}
   </main>
 
   <footer class="site-footer">
-    <div class="footer-container">
+    <div class="footer-inner">
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/marylenableile/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=NTmz-a0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://github.com/MLenaBleile" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:marylenableile@gmail.com">Email</a>
       </div>
-      <p class="footer-copyright">&copy; {{ 'now' | date: "%Y" }} MaryLena Bleile</p>
+      <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} MaryLena Bleile</p>
     </div>
   </footer>
+
 </body>
 </html>
