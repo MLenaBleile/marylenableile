@@ -237,6 +237,33 @@ img {
   margin-bottom: 20px;
 }
 
+.body-opener {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+// Art dividers between sections
+.art-divider {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $separator;
+    opacity: 0.85;
+    transition: opacity 0.2s, border-color 0.2s;
+
+    &:hover {
+      opacity: 1;
+      border-color: $purple;
+    }
+  }
+}
+
 // ============================================
 // Recognition section
 // ============================================
@@ -708,27 +735,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 2px;
-  }
-}
-
-// Art gallery row (About page)
-.art-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin: 36px 0;
-
-  img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid $separator;
-    transition: border-color 0.2s;
-
-    &:hover {
-      border-color: $purple;
-    }
   }
 }
 
