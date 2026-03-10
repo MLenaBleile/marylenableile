@@ -27,8 +27,32 @@ url: /projects/
       </div>
 
       <div class="project-card-featured featured-sandy">
-        <div class="featured-image">
-          <img src="{{ '/media/sandy.png' | relative_url }}" alt="Sandy, AI knowledge discovery agent">
+        <div class="featured-image sandy-animated">
+          <div class="sandy-container">
+            <svg viewBox="0 -10 200 300" xmlns="http://www.w3.org/2000/svg" width="150">
+              <polygon points="100,165 25,130 25,230 100,265" fill="#9a9bc7" stroke="#8384b3" stroke-width="1.5"/>
+              <polygon points="100,165 175,130 175,230 100,265" fill="#b8b9dd" stroke="#8384b3" stroke-width="1.5"/>
+              <polygon points="25,130 100,95 175,130 100,165" fill="#c8c9e8" stroke="#8384b3" stroke-width="1.5"/>
+              <g class="sandy-sprout" transform="translate(100, 130)">
+                <line x1="0" y1="0" x2="0" y2="-30" stroke="#3d6b2e" stroke-width="3" stroke-linecap="round"/>
+                <path d="M0 -25 Q-8 -38 -14 -45 Q-20 -52 -12 -56 Q-5 -47 0 -32" fill="#5a9e3a" stroke="#3d6b2e" stroke-width="1.5"/>
+                <path d="M0 -25 Q8 -40 16 -47 Q24 -54 19 -59 Q11 -50 5 -35" fill="#6bb84a" stroke="#3d6b2e" stroke-width="1.5"/>
+                <path d="M0 -25 Q-6 -35 -12 -39 Q-18 -43 -14 -49" fill="none" stroke="#d4757a" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+              </g>
+              <g class="sandy-eye" style="transform-origin: 120px 190px;">
+                <ellipse cx="120" cy="190" rx="12" ry="13" fill="#5a5e4a" stroke="#3a3e2a" stroke-width="1"/>
+                <ellipse cx="120" cy="190" rx="9" ry="10" fill="#6b7058"/>
+                <circle cx="117" cy="193" r="3" fill="#8a8f75" opacity="0.6"/>
+                <circle cx="120" cy="190" r="4" fill="#2a2e1a"/>
+              </g>
+              <g class="sandy-eye" style="transform-origin: 150px 176px;">
+                <ellipse cx="150" cy="176" rx="12" ry="13" fill="#5a5e4a" stroke="#3a3e2a" stroke-width="1"/>
+                <ellipse cx="150" cy="176" rx="9" ry="10" fill="#6b7058"/>
+                <circle cx="147" cy="173" r="3" fill="#8a8f75" opacity="0.6"/>
+                <circle cx="150" cy="176" r="4" fill="#2a2e1a"/>
+              </g>
+            </svg>
+          </div>
         </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>

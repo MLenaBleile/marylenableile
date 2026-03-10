@@ -626,10 +626,16 @@ img {
 // Sandy — soft peach/pink like the dashboard
 .featured-sandy {
   background: linear-gradient(135deg, #d4827a 0%, #e8a88c 40%, #f2c5a0 100%);
+  overflow: visible;
+  position: relative;
 
   .featured-image img {
     border-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
+  }
+
+  .sandy-animated {
+    overflow: visible;
   }
 
   p, h3, h3 a {
@@ -655,6 +661,45 @@ img {
     &:hover {
       color: #3d1010;
     }
+  }
+}
+
+// Sandy SVG animation
+@keyframes sandy-bob {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes sandy-blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+@keyframes sprout-sway {
+  0%, 100% { transform: translate(100px, 130px) rotate(0deg); }
+  25% { transform: translate(100px, 130px) rotate(3deg); }
+  75% { transform: translate(100px, 130px) rotate(-3deg); }
+}
+
+.sandy-container {
+  animation: sandy-bob 3s ease-in-out infinite;
+  display: inline-block;
+  margin-top: -30px;
+
+  svg {
+    width: 150px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  }
+
+  .sandy-eye {
+    animation: sandy-blink 4s ease-in-out infinite;
+  }
+
+  .sandy-sprout {
+    animation: sprout-sway 2.5s ease-in-out infinite;
+    transform-origin: 0px 0px;
   }
 }
 
