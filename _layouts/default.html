@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="Statistician and AI researcher specializing in causal inference, reinforcement learning, and decision-making under uncertainty. Author of Optimal Control Using Causal Agents (CRC Press).">
+  <meta property="og:image" content="{{ '/media/photo.jpg' | prepend: site.url }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="Statistician and AI researcher specializing in causal inference, reinforcement learning, and decision-making under uncertainty.">
+  <meta name="twitter:image" content="{{ '/media/photo.jpg' | prepend: site.url }}">
   <link rel="icon" type="image/png" href="{{ '/media/symbol.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
