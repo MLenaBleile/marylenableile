@@ -9,9 +9,6 @@ permalink: pretty
 navigation:
   - title: About
     url: /
-  - title: Blog
-    url: https://feralmathblog.substack.com/
-    external: true
   - title: Book
     url: https://www.causal-rl-bridges.com
     external: true

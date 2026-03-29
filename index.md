@@ -36,7 +36,7 @@ title: MaryLena Bleile, Ph.D
       Previously I served as a biomarker study statistician at Sanofi, where I led a multidisciplinary methodological initiative for improving the efficiency of 'omics analysis. I have also had the pleasure of working in the Epi/Bio department at Memorial Sloan-Kettering Cancer Center as well as the AI and Automation lab at UT Southwestern Medical Center, where I performed my Ph.D research.
     </p>
     <p class="body-text">
-      When I'm not writing or coding, you can usually find me on the mat doing Brazilian Jiu Jitsu, or lifting weights at the gym.
+      When I'm not writing or coding, you can usually find me on the mat doing Brazilian Jiu Jitsu, or lifting weights at the gym. You can also read my unserious math blog <a href="https://feralmathblog.substack.com/" target="_blank" rel="noopener">here</a>.
     </p>
 
     <div class="art-divider">
