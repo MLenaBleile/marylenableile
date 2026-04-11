@@ -80,7 +80,7 @@ title: MaryLena Bleile, Ph.D
     <h3>How to evaluate me</h3>
     <p>I love talking about real problems. Ask me to walk through a piece of my published work, pair-program on a challenge your team is actually facing, present my research, or design a solution to an open question in your domain.</p>
 
-    <h3>A Note on classical assessments</h3>
+    <h3>A note on classical assessments</h3>
     <p>On principle, I do not take leetcode-style assessments, logic/probability brain teasers, and the like. If your company uses these, then it's probably not a good fit: Time-sensitive closed form assessments select for people who excel at thinking inside the box to produce pre-specified answers, and I prefer to work on teams that include the more creative and innovative outside-the-box thinkers as well.</p>
 
     <div class="hire-cta">
