@@ -78,7 +78,7 @@ title: MaryLena Bleile, Ph.D
     <p><strong>Rooms full of weird thinkers.</strong> The colleagues I&rsquo;ve learned the most from are the ones who take longer and arrive somewhere no one expected. I&rsquo;m looking for teams that select for that kind of mind.</p>
 
     <h3>How to evaluate me</h3>
-    <p>I love talking about real problems. Ask me to walk through a piece of my published work, pair-program on a challenge your team is actually facing, present my research, or design a solution to an open question in your domain.</p>
+    <p>I love talking about real problems. Ask me to walk through a piece of my published work, produce a prototype for a technical product within a 24-hr time crunch, or design a solution to an open question in your domain.</p>
 
     <h3>A note on classical assessments</h3>
     <p>On principle, I do not take leetcode-style assessments, logic/probability brain teasers, and the like. If your company uses these, then it's probably not a good fit: Time-sensitive closed form assessments select for people who excel at thinking inside the box to produce pre-specified answers, and I prefer to work on teams that include the more creative and innovative outside-the-box thinkers as well.</p>
