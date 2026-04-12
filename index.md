@@ -66,7 +66,7 @@ title: MaryLena Bleile, Ph.D
   <div class="hire-modal">
     <button class="hire-modal-close" onclick="document.getElementById('hire-modal').classList.remove('active');document.body.style.overflow='';">&times;</button>
     <h2>Hire Me</h2>
-    <p class="hire-intro">I&rsquo;m selectively open to translational roles in AI research, applied statistics, and quantitative methods. I&rsquo;m particularly interested in roles where causal inference, reinforcement learning, and decision-making under uncertainty intersect.</p>
+    <p class="hire-intro">I&rsquo;m open to translational roles in AI research, applied statistics, and quantitative methods. I&rsquo;m particularly interested in roles where causal inference, reinforcement learning, and decision-making under uncertainty intersect.</p>
 
     <h3>What you get</h3>
     <p>I find structure and deep connections between concepts that other people miss. My career has been built on technical bridges: I unify concepts and fields that typically don&rsquo;t talk to each other, from financial modelling to -omics pipelines and control systems. A non-exhaustive list of accomplishments include a forthcoming CRC Press monograph nominated as &ldquo;Best Book in Causality of 2025&rdquo;, 15+ publications including <em>Nature Communications</em> and <em>Mathematical Control</em>, FDA-cleared ML devices, and a multi-departmental methodological initiative in big pharma that changed how teams approached high-dimensional biomarker analysis.</p>
