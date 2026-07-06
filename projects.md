@@ -56,7 +56,7 @@ url: /projects/
         </div>
         <div class="featured-content">
           <p class="featured-badge">Featured</p>
-          <h3><a href="https://github.com/MLenaBleile/sandy" target="_blank" rel="noopener">Sandy</a></h3>
+          <h3><a href="https://sandy-agent.streamlit.app" target="_blank" rel="noopener">Sandy</a></h3>
           <p>An autonomous AI agent that forages across Wikipedia, academic papers, and news to discover "sandwiches"; i.e. structured knowledge artifacts where two related concepts (the bread) meaningfully bound a third (the filling). Each sandwich is validated across five weighted dimensions including novelty, specificity, and non-triviality. <br><br>
           
           He has vast intelligence. He chooses to make sandwiches.</p>
