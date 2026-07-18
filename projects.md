@@ -26,6 +26,50 @@ url: /projects/
         </div>
       </div>
 
+      <div class="project-card-featured featured-breadrun">
+        <div class="featured-image breadrun-animated">
+          <div class="breadrun-container">
+            <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg" width="160">
+              <!-- pavement -->
+              <ellipse cx="100" cy="150" rx="78" ry="14" fill="rgba(0,0,0,0.18)"/>
+              <!-- pigeon (scaled from the game sprite) -->
+              <g transform="translate(100 88)">
+                <g class="breadrun-pigeon">
+                  <g transform="scale(3.4) translate(-16 -16)">
+                    <ellipse cx="16" cy="19" rx="11" ry="9" fill="#c7ccd2"/>
+                    <path d="M9 18 q7 5 14 0 q-3 7 -7 7 q-4 0 -7 -7Z" fill="#aeb4bb"/>
+                    <circle cx="22" cy="12" r="6" fill="#9fa9b8"/>
+                    <circle cx="23.5" cy="11" r="1.6" fill="#1a1a1a"/>
+                    <path d="M28 11 l4 1.5 l-4 1.5Z" fill="#f2a23d"/>
+                    <path d="M27 14 a2 2 0 0 1 -1 3" fill="none" stroke="#3a9d63" stroke-width="1.2"/>
+                    <path d="M13 24 l-2 4 M17 24 l0 4" stroke="#e0473f" stroke-width="1.6" stroke-linecap="round"/>
+                  </g>
+                </g>
+              </g>
+              <!-- bread roll -->
+              <g class="breadrun-bread" transform="translate(158 120)">
+                <ellipse cx="0" cy="0" rx="14" ry="10" fill="#e7c878" stroke="#a87f3e" stroke-width="1.6"/>
+                <path d="M-8 -5 q8 -4 16 0 M-9 1 q9 -3 18 0" fill="none" stroke="#c69a4e" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+              <!-- crumbs -->
+              <circle class="breadrun-crumb" cx="120" cy="132" r="3" fill="#e7c878"/>
+              <circle class="breadrun-crumb" cx="66" cy="138" r="2.5" fill="#d8b76a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="featured-content">
+          <p class="featured-badge">Featured</p>
+          <h3><a href="https://nyc-bread-run.onrender.com" target="_blank" rel="noopener">NYC Bread Run</a></h3>
+          <p>A scrappy top-down NYC arcade game. Play as a pigeon or a rat scurrying through stylized city streets, gobbling every crumb of bread while dodging street cleaners. Along the way there are Frogger-style bridge crossings, a black-belt power-up from Coach Quinn, an escaped Bronx Zoo tiger, and a fighting-game finale against a broom-wielding mayor. It's pure static vanilla JS, with no framework or build step behind it.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Game Dev</span>
+            <span class="tag">WebAudio</span>
+          </div>
+          <p style="margin-top: 12px;"><a href="https://nyc-bread-run.onrender.com" target="_blank" rel="noopener">Play NYC Bread Run &rarr;</a></p>
+        </div>
+      </div>
+
       <div class="project-card-featured featured-sandy">
         <div class="featured-image sandy-animated">
           <div class="sandy-container">
