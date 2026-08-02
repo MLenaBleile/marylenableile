@@ -11,11 +11,10 @@ title: MaryLena Bleile, Ph.D
     <div class="hero-text">
       <h1>MaryLena Bleile, Ph.D</h1>
       <p class="subtitle">Statistician</p>
-      <p class="tagline">Control Theory, Causality, & Agentic AI (Reinforcement Learning)</p>
+      <p class="tagline">Control Theory, Causality, & Reinforcement Learning</p>
       <div class="hero-links">
         <a href="https://www.linkedin.com/in/marylena-bleile-bb7b33132/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:marylenableile@gmail.com">Email</a>
-        <a href="#" class="hire-me-btn" onclick="document.getElementById('hire-modal').classList.add('active'); document.body.style.overflow='hidden'; return false;">Hire Me</a>
       </div>
     </div>
   </div>
@@ -28,15 +27,11 @@ title: MaryLena Bleile, Ph.D
       I'm a statistician who builds bridges between causal inference, control theory, and AI. I am the author of <em>Optimal Control Using Causal Agents</em>, forthcoming under contract with CRC Press; see the "Book" tab for more information.
     </p>
 
-    <div class="art-divider">
-      <img src="{{ '/media/art1.png' | relative_url }}" alt="Mathematical visualization">
-    </div>
-
     <p class="body-text">
-      Previously I served as a biomarker study statistician at Sanofi, where I led a multidisciplinary methodological initiative for improving the efficiency of 'omics analysis. I have also had the pleasure of working in the Epi/Bio department at Memorial Sloan-Kettering Cancer Center as well as the AI and Automation lab at UT Southwestern Medical Center, where I performed my Ph.D research.
+      My endeavors have included serving as a biomarker study statistician at Sanofi, where I led a multidisciplinary methodological initiative for improving the efficiency of 'omics analysis. I have also had the pleasure of working in the Epi/Bio department at Memorial Sloan-Kettering Cancer Center as well as the AI and Automation lab at UT Southwestern Medical Center, where I performed my Ph.D research.
     </p>
     <p class="body-text">
-      When I'm not writing or coding, you can usually find me on the mat doing Brazilian Jiu Jitsu, or lifting weights at the gym. You can also read my unserious math blog <a href="https://feralmathblog.substack.com/" target="_blank" rel="noopener">here</a>.
+      When I'm not writing or math-ing, you can usually find me on the mat doing Brazilian Jiu Jitsu or reading non-fiction. You can also read my unprofessional math blog <a href="https://feralmathblog.substack.com/" target="_blank" rel="noopener">here</a>.
     </p>
 
     <div class="art-divider">
